@@ -18,3 +18,8 @@ RUN git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start
 RUN git clone https://github.com/tomasiser/vim-code-dark ~/.vim/pack/vendor/start/vim-code-dark
 # VIM GO
 RUN git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
+
+# Go Utilities
+RUN go get github.com/jesseduffield/lazygit 
+RUN go get github.com/jesseduffield/lazydocker 
+RUN go get github.com/gokcehan/lf 

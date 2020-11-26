@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+./build
+docker run --rm -it devimage bash -l

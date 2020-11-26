@@ -1,0 +1,1 @@
+export PATH=$PATH:/downloads/node-v15.3.0-linux-x64/bin

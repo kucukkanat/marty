@@ -53,9 +53,6 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
-" Display different types of white spaces.
-set list
-set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 " ===== END CORE CONFIG ======= "
 
 " PLUGINS

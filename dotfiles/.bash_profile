@@ -1,1 +1,15 @@
-export PATH=$PATH:/downloads/node-v15.3.0-linux-x64/bin
+export PATH=$PATH:/usr/local/go/bin
+
+lfcd () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        if [ -d "$dir" ]; then
+            if [ "$dir" != "$(pwd)" ]; then
+                cd "$dir"
+            fi
+        fi
+    fi
+}

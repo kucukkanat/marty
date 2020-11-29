@@ -24,6 +24,9 @@ RUN git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start
 RUN git clone https://github.com/tomasiser/vim-code-dark ~/.vim/pack/vendor/start/vim-code-dark
 # VIM GO
 RUN git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
+# VIM Prettier
+RUN mkdir -p ~/.vim/pack/plugins/start
+RUN git clone https://github.com/prettier/vim-prettier ~/.vim/pack/plugins/start/vim-prettier
 
 # Go Utilities
 RUN go get github.com/jesseduffield/lazygit 

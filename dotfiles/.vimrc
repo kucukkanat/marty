@@ -53,8 +53,6 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
-" Better active tab highlight
-hi TabLineSel ctermfg=Red ctermbg=Yellow
 
 " ===== END CORE CONFIG ======= "
 
@@ -76,3 +74,7 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 let g:coc_global_extensions= ['coc-omnisharp','coc-tsserver']
+
+
+" Better active tab highlight
+hi TabLineSel ctermfg=Red ctermbg=Yellow

@@ -53,6 +53,9 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+" Better active tab highlight
+hi TabLineSel ctermfg=Red ctermbg=Yellow
+
 " ===== END CORE CONFIG ======= "
 
 " PLUGINS

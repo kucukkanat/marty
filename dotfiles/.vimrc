@@ -70,6 +70,8 @@ colorscheme codedark
 " Coc.vim Config
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
+" Enable this if you want definition in a new tab
+" nmap <silent> gd :call CocAction('jumpDefinition', 'tab drop') <CR>
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)

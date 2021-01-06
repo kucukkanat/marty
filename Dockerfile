@@ -27,7 +27,8 @@ RUN git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-
 # VIM Prettier
 RUN mkdir -p ~/.vim/pack/plugins/start
 RUN git clone https://github.com/prettier/vim-prettier ~/.vim/pack/plugins/start/vim-prettier
-
+# Vim Fugitive
+RUN git clone git clone https://tpope.io/vim/fugitive.git ~/.vim/pack/plugins/start/fugitive
 # Go Utilities
 RUN go get github.com/jesseduffield/lazygit 
 RUN go get github.com/jesseduffield/lazydocker 

@@ -80,3 +80,6 @@ let g:coc_global_extensions= ['coc-omnisharp','coc-tsserver']
 
 " Better active tab highlight
 hi TabLineSel ctermfg=Red ctermbg=Yellow
+
+" fzf
+set rtp+=~/.fzf

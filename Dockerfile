@@ -15,13 +15,13 @@ ENV PATH $PATH:/usr/local/go/bin:/root/go/bin
 
 # Vim Plugins
 # COC.VIM
-RUN mkdir -p ~/.vim/pack/coc/start && \
-    cd ~/.vim/pack/coc/start && \
+RUN mkdir -p ~/.vim/pack/plugins/start && \
+    cd ~/.vim/pack/plugins/start && \
     curl --fail -L https://github.com/neoclide/coc.nvim/archive/release.tar.gz|tar xzfv -
 # NERDTREE
-RUN git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
+RUN git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/plugins/start/nerdtree
 # VSCode Theme
-RUN git clone https://github.com/tomasiser/vim-code-dark ~/.vim/pack/vendor/start/vim-code-dark
+RUN git clone https://github.com/tomasiser/vim-code-dark ~/.vim/pack/plugins/start/vim-code-dark
 # VIM GO
 RUN git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
 # VIM Prettier
